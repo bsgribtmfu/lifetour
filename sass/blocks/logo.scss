@@ -1,0 +1,64 @@
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo__icon {
+  margin-right: 22px;
+  width: 62px;
+  height: 62px;
+
+  @include toTablet {
+    margin-right: 13px;
+    width: 36px;
+    height: 36px;
+  }
+
+  @include toMobile {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &--white {
+      fill: #FFFFFF;
+  }
+
+  &--black {
+      fill: #2D383F;
+  }
+}
+
+.logo__title {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 28px;
+  margin: 0;
+
+  @include toTablet {
+      font-size: 16px;
+      line-height: 20px;
+  }
+
+  @include toMobile {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.logo__subtitle {
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  margin: 0;
+
+  @include toTablet {
+    font-size: 6px;
+  }
+
+  @include toMobile {
+    font-size: 4px;
+  }
+}
