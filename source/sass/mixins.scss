@@ -1,0 +1,29 @@
+@mixin to($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin from($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin toTablet {
+  @include to($bp-tablet) {
+    @content;
+  }
+}
+
+@mixin toDesktop {
+  @include to($bp-desktop) {
+    @content;
+  }
+}
+
+@mixin toMobile {
+  @include to($bp-mobile) {
+    @content;
+  }
+}
