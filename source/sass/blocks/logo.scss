@@ -22,11 +22,11 @@
   }
 
   &--white {
-      fill: #FFFFFF;
+      fill: $white;
   }
 
   &--black {
-      fill: #2D383F;
+      fill: $dark-blue;
   }
 }
 
@@ -38,8 +38,8 @@
   margin: 0;
 
   @include toTablet {
-      font-size: 16px;
-      line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @include toMobile {
