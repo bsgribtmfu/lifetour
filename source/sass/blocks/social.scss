@@ -3,29 +3,11 @@
   justify-content: flex-end;
   padding: 0;
   list-style: none;
-
-  @include toMobile {
-    display: none;
-  }
 }
 
 .social__item {
-  &--margin-small {
-    &:not(:last-child) {
-        margin-right: 14px;
-    }
-  }
-
-  &--margin-medium {
-    &:not(:last-child) {
-        margin-right: 17px;
-    }
-
-    @include toTablet {
-      &:not(:last-child) {
-          margin-right: 23px;
-      }
-    }
+  &:not(:last-child) {
+      margin-right: 14px;
   }
 }
 
