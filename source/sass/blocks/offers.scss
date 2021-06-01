@@ -1,0 +1,159 @@
+.offers {
+  display: flex;
+  padding: 0;
+  list-style: none;
+
+  // for slider
+  // position: relative;
+  // transition: all ease 0.5s;
+  // left: 0;
+}
+
+.offers__item {
+  flex-shrink: 0;
+  background-color: $dark-blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  width: 384px;
+  height: 412px;
+
+  &--kavkaz {
+    background-image: url('../img/slider/kavkaz@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/slider/kavkaz@2x.jpg");
+    }
+  }
+
+  &--altay {
+    background-image: url('../img/slider/altay@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/altay@2x.jpg");
+    }
+  }
+
+  &--adygea {
+    background-image: url('../img/slider/adygea@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/adygea@2x.jpg");
+    }
+  }
+
+  &::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(0deg, black 22.3%, rgba(0, 0, 0, 0) 60%);
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+  }
+
+  &:not(:last-child) {
+      margin-right: 21px;
+  }
+
+  @include toMobile {
+    max-width: 100%;
+  }
+}
+
+
+.offers__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px 10px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
+.offers__text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 23px;
+}
+
+.offers__details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 44px;
+}
+
+.offers__details-term {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.offers__details-definition {
+  margin: 0;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.offers__wrapper {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+
+  @include toMobile {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+.offers__location {
+  padding: 6px;
+  text-align: center;
+  min-width: 115px;
+  background-color: $blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  order: -1;
+
+  @include toMobile {
+    order: 1;
+    margin-top: 28px;
+    padding: 8px;
+    text-align: left;
+    min-width: 82px;
+  }
+}
+
+.offers__country {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.offers__location-icon {
+  margin-right: 6px;
+}
+
+.offers__time {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  @include toMobile {
+    margin-right: 32px;
+  }
+}
+
+.offers__time-span{
+  margin-left: 7px;
+}

@@ -3,6 +3,10 @@
   justify-content: flex-end;
   padding: 0;
   list-style: none;
+
+  @include toMobile {
+    display: none;
+  }
 }
 
 .social__item {
@@ -22,7 +26,7 @@
   }
 
   &--border {
-      border: 1.3082px solid #2D383F;
+      border: 1px solid $dark-blue;
       height: 29px;
       width: 29px;
   }
@@ -39,6 +43,6 @@
   }
 
   &--black {
-      fill: #2D383F;
+      fill: $dark-blue;
   }
 }
