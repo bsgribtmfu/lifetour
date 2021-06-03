@@ -4,7 +4,6 @@
 
 .progress__title {
   margin: 0;
-  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 
@@ -36,7 +35,6 @@
     width: calc(50vw - 50%);
     right: calc(50% - 50vw);
     bottom: -1px;
-    top: 0;
     border-bottom: 1px solid $light-blue;
   }
 
@@ -46,7 +44,6 @@
     width: calc(50vw - 50%);
     left: calc(50% - 50vw);
     bottom: -1px;
-    top: 0;
     border-bottom: 1px solid $light-blue;
   }
 

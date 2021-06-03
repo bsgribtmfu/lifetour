@@ -9,13 +9,12 @@
   width: 234px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
 
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-right: 6px;
   }
 }
 
 .instructors__name {
-  width: 90px;
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
@@ -29,7 +28,7 @@
   line-height: 15px;
 }
 
-.instructors__wrapper {
+.instructors__card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,14 +44,14 @@
 }
 
 .instructors__social-icon {
-  fill: #494949;
+  fill: $gray;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.instructors__image {
+.instructors__image-wrapper {
   width: 203px;
   height: 213px;
 }

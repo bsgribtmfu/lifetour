@@ -53,6 +53,7 @@
 }
 
 .training__text {
+  display: block;
   margin: 0;
   margin-top: 30px;
   font-weight: normal;
@@ -80,7 +81,6 @@
 }
 
 .training__pagination-title {
-  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
