@@ -11,7 +11,7 @@
 
 .social__item {
   &:not(:last-child) {
-      margin-right: 14px;
+    margin-right: 14px;
   }
 }
 
@@ -20,15 +20,23 @@
   position: relative;
 
   &--background {
-      background-color: rgba(2, 102, 193, 0.4);
-      height: 21px;
-      width: 21px;
+    background-color: $translucent-blue;
+    height: 21px;
+    width: 21px;
   }
 
   &--border {
-      border: 1px solid $dark-blue;
-      height: 29px;
-      width: 29px;
+    border: 1px solid $dark-blue;
+    height: 29px;
+    width: 29px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px $white;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
 
@@ -39,10 +47,10 @@
   transform: translate(-50%,-50%);
 
   &--white {
-      fill: $white;
+    fill: $white;
   }
 
   &--black {
-      fill: $dark-blue;
+    fill: $dark-blue;
   }
 }
