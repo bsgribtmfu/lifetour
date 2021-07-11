@@ -4,14 +4,14 @@
   cursor: pointer;
   opacity: 1;
   fill: $white;
-  transition: fill 0.3s;
+  transition: opacity 0.2s;
 
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
 

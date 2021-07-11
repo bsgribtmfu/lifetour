@@ -1,11 +1,11 @@
 const element = document.querySelector('.feedback__input-phone');
 
 const initMaskNubmer = () => {
-  let maskOptions = {
+  const maskOptions = {
     mask: '+{7} (000) 000-00-00'
   };
 
-  let mask = IMask(element, maskOptions);
+  const mask = IMask(element, maskOptions);
 }
 
 export { initMaskNubmer };

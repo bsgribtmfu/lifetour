@@ -6,7 +6,7 @@ const calcSliderParam = (listElems) => {
   listElems.forEach(element => {
     sumWidth += element.offsetWidth;
     sumMargin += parseFloat(window.getComputedStyle(element, null).marginRight);
-    sliderCount += 1;
+    sliderCount++;
   });
 
   return {

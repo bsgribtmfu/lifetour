@@ -109,6 +109,7 @@
 }
 
 .feedback__button {
+  border: none;
   font-family: inherit;
   font-weight: normal;
   font-size: 14px;
@@ -117,8 +118,8 @@
   width: 246px;
   height: 64px;
   background-color: $blue;
-  border: 1px solid $light-gray;
   color: inherit;
+  cursor: pointer;
 
   &:hover {
     background-color: $half-blue;

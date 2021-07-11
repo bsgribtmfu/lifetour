@@ -16,12 +16,12 @@ const next = document.querySelector('.pagination__button--next');
 
 const moveRight = () => {
   position += fragment;
-  let remainder = ((sliderParams.sumWidth + sliderParams.sumMargin) - position) - offers.offsetWidth; // расчет остатка слайдера
+  const remainder = ((sliderParams.sumWidth + sliderParams.sumMargin) - position) - offers.offsetWidth; // расчет остатка слайдера
   if (remainder >= 0) {
-    offers.style.left = -position + 'px';
+    offers.style.left = `${-position}px`
   }
   else {
-    offers.style.left = (-position - remainder) + 'px';
+    offers.style.left = `${-position -remainder}px`;
     position -= fragment; // ?
   }
 }
@@ -31,7 +31,7 @@ const moveLeft = () => {
   if (position < 0) {
     position = 0;
   }
-  offers.style.left = -position + 'px';
+  offers.style.left = `${-position}px`
 }
 
 const checkAction = () => {
@@ -53,8 +53,8 @@ const sliderToursInit = () => {
     checkAction();
   });
 
-  prev.addEventListener('click', function() { moveLeft(); })
-  next.addEventListener('click', function() { moveRight(); })
+  prev.addEventListener('click', moveLeft);
+  next.addEventListener('click', moveRight);
 }
 
 export { sliderToursInit };

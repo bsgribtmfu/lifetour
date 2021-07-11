@@ -8,7 +8,7 @@ const navLinks = document.querySelectorAll('.main-navigation__link');
 const checkLinks = () => {
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      removeClass();
+      closeNav();
       input.checked = false;
     });
   });
@@ -16,21 +16,20 @@ const checkLinks = () => {
 
 const checkToggle = () => {
   if (input.checked) {
-    addClass();
-  }
-  else {
-    removeClass();
+    openNav();
+  } else {
+    closeNav();
   }
 }
 
-const addClass = () => {
+const openNav = () => {
   mainNav.classList.add('main-navigation--show');
   listNav.classList.add('main-navigation__list--show');
   label.classList.add('main-navigation__label--hidden');
   body.classList.add('body--hidden')
 }
 
-const removeClass = () => {
+const closeNav = () => {
   mainNav.classList.remove('main-navigation--show');
   listNav.classList.remove('main-navigation__list--show');
   label.classList.remove('main-navigation__label--hidden');
@@ -38,7 +37,7 @@ const removeClass = () => {
 }
 
 const initNavigation = () => {
-  input.addEventListener('click', () => checkToggle());
+  input.addEventListener('click', checkToggle);
   checkLinks();
 }
 
