@@ -29,7 +29,8 @@ a {
 
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline dotted; }
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; }
 
 b, strong {
   font-weight: bolder; }
@@ -121,7 +122,8 @@ summary {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
@@ -831,17 +833,17 @@ img {
   height: 412px; }
   .offers__item--kavkaz {
     background-image: url("../img/slider/kavkaz@1x.jpg"); }
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       .offers__item--kavkaz {
         background-image: url("../img/slider/kavkaz@2x.jpg"); } }
   .offers__item--altay {
     background-image: url("../img/slider/altay@1x.jpg"); }
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       .offers__item--altay {
         background-image: url("../img/slider/altay@2x.jpg"); } }
   .offers__item--adygea {
     background-image: url("../img/slider/adygea@1x.jpg"); }
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       .offers__item--adygea {
         background-image: url("../img/slider/adygea@2x.jpg"); } }
   .offers__item::before {
@@ -1070,7 +1072,8 @@ img {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
   transition: 0.5s ease; }
   .instructors__item:hover {
-    object-fit: fill; }
+    -o-object-fit: fill;
+       object-fit: fill; }
   .instructors__item:not(:last-of-type) {
     margin-right: 6px; }
 
@@ -1534,6 +1537,8 @@ img {
   border: 1px solid #d5d4d4;
   background-color: #FFFFFF;
   margin-right: 13px; }
+  .feedback__input-name::-moz-placeholder, .feedback__input-phone::-moz-placeholder {
+    color: #9a9797; }
   .feedback__input-name::placeholder,
   .feedback__input-phone::placeholder {
     color: #9a9797; }
@@ -1636,6 +1641,7 @@ img {
 .gallery__list {
   display: grid;
   justify-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(-webkit-min-content, -webkit-max-content));
   grid-template-columns: repeat(auto-fill, minmax(min-content, max-content));
   grid-template-rows: 179px auto;
   grid-auto-flow: column dense;
@@ -1672,3 +1678,5 @@ img {
 .swiper-slide-duplicate-active,
 .swiper-slide-duplicate-next {
   opacity: 0.5; }
+
+/*# sourceMappingURL=style.css.map */
