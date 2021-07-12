@@ -720,7 +720,7 @@ img {
     position: absolute;
     width: 552px;
     height: 1240px;
-    background-image: url("../../img/slider/exposure-in-mountains@1x.png");
+    background-image: url("../img/slider/exposure-in-mountains@1x.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -729,7 +729,7 @@ img {
     z-index: -1; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       .tours::before {
-        background-image: url("../../img/slider/exposure-in-mountains@2x.png"); } }
+        background-image: url("../img/slider/exposure-in-mountains@2x.png"); } }
   @media screen and (max-width: 1023px) {
     .tours::before {
       content: '';
@@ -1155,7 +1155,7 @@ img {
       justify-content: space-between;
       border-bottom: none;
       padding-bottom: 0;
-      background-image: url("../../img/icons/tablet-progress-bar.svg");
+      background-image: url("../img/icons/tablet-progress-bar.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%; }
       .progress__list::before {
@@ -1443,12 +1443,12 @@ img {
     width: 30px;
     height: 23px; }
   .reviews__text:first-of-type::before {
-    background-image: url(../img/icons/blockquote.svg);
+    background-image: url("../img/icons/blockquote.svg");
     transform: rotate(-180deg);
     top: 0;
     left: 0; }
   .reviews__text:last-of-type::before {
-    background-image: url(../img/icons/blockquote.svg);
+    background-image: url("../img/icons/blockquote.svg");
     bottom: 0;
     right: 0; }
   .reviews__text--margin-top {
