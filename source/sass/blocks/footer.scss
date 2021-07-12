@@ -62,6 +62,14 @@
   line-height: 25px;
   color: inherit;
 
+  &:hover {
+    color: $half-gray;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
   @include toTablet {
     font-size: 14px;
     line-height: 22px;
@@ -80,6 +88,14 @@
   line-height: 30px;
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    color: $half-gray;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 
   @include toTablet {
     display: none;

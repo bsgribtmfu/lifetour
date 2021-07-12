@@ -74,6 +74,7 @@
 .progress__item {
   position: relative;
   padding-left: 40px;
+  padding-right: 20px;
   width: 25%;
 
   &::before {
@@ -123,6 +124,7 @@
 
   @include toTablet {
     width: 234px;
+    padding-right: initial;
 
     &:nth-child(odd) {
       margin-right: 50px;
@@ -142,6 +144,7 @@
 
     &:nth-child(n) {
       margin-bottom: 24px;
+      margin-right: initial;
     }
 
     &:last-child {
