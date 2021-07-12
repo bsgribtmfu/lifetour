@@ -2,31 +2,44 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  opacity: 1;
+  fill: $white;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__icon {
   margin-right: 22px;
-  width: 62px;
-  height: 62px;
+  width: 61px;
+  height: 61px;
 
-  @include toTablet {
-    margin-right: 13px;
-    width: 36px;
-    height: 36px;
-  }
+  &--header {
+    @include toTablet {
+      margin-right: 13px;
+      width: 36px;
+      height: 36px;
+    }
 
-  @include toMobile {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
+    @include toMobile {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &--white {
-      fill: #FFFFFF;
+      fill: $white;
   }
 
   &--black {
-      fill: #2D383F;
+      fill: $dark-blue;
   }
 }
 
@@ -37,14 +50,16 @@
   line-height: 28px;
   margin: 0;
 
-  @include toTablet {
+  &--header {
+    @include toTablet {
       font-size: 16px;
       line-height: 20px;
-  }
+    }
 
-  @include toMobile {
-    font-size: 12px;
-    line-height: 15px;
+    @include toMobile {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
 
@@ -54,11 +69,13 @@
   line-height: 10px;
   margin: 0;
 
-  @include toTablet {
-    font-size: 6px;
-  }
+  &--header {
+    @include toTablet {
+      font-size: 6px;
+    }
 
-  @include toMobile {
-    font-size: 4px;
+    @include toMobile {
+      font-size: 4px;
+    }
   }
 }

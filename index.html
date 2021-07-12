@@ -1,113 +1,597 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="keywords" content="Походы в горы России">
-      <meta name="description" content="Организация походов в горы, туры">
-      <link rel="stylesheet" href="css/style.css">
-      <title>Походы в горы России</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Походы в горы России">
+    <meta name="description" content="Организация походов в горы, туры">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-800italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Походы в горы России</title>
   </head>
   <body class="body">
-    <h1 class="visually-hidden">Туры в горы России и инструкторы</h1>
-      <header class="header">
-        <div class="header_inner container">
-          <div class="header__wrapper">
-            <a class="header__logo logo">
-                <svg class="logo__icon logo__icon--white" width="31" height="31" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                        <path d="M11.1701 19.6984L13.8456 16.8891L16.889 19.6984H22.1062L13.8121 11.5715L5.58496 19.6984H11.1701Z" />
-                        <path d="M18.8288 6.65531L14.8825 10.6686L17.4911 13.3441L18.8288 12.0063L26.153 19.297C24.4808 23.7451 20.2 26.9222 15.15 26.9222C8.66193 26.9222 3.41126 21.6716 3.41126 15.1835C3.44471 8.69538 8.69538 3.44471 15.1835 3.44471C20.9358 3.44471 25.7517 7.62518 26.7216 13.0765L30.2666 16.8222C30.3335 16.2871 30.3669 15.7186 30.3669 15.1835C30.3669 11.1368 28.7951 7.32418 25.9189 4.44802C23.0427 1.57186 19.2302 0 15.1835 0C11.1033 0 7.32418 1.57186 4.44802 4.44802C1.57186 7.32418 0 11.1033 0 15.1835C0 19.2636 1.57186 23.0427 4.44802 25.9189C7.32418 28.7951 11.1368 30.3669 15.1835 30.3669C19.2302 30.3669 23.0427 28.7951 25.9189 25.9189C27.6914 24.1464 28.9623 22.0394 29.6646 19.7318C29.7984 19.3305 29.8987 18.8957 29.9991 18.4944L26.9222 15.2504L18.8288 6.65531Z" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <rect width="30.3335" height="30.3335" />
-                        </clipPath>
-                    </defs>
-                </svg>
-                <div class="logo__description">
-                    <p class="logo__title">LIFETOUR</p>
-                    <p class="logo__subtitle">Организация походов в горы</p>
-                </div>
-            </a>
-            <nav class="header__navigation main-navigation">
-                <ul class="main-navigation__list">
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Туры</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Обучение</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">О&nbsp;нас</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Отзывы</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Фотографии</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Контакты</a>
-                    </li>
-                </ul>
-                <button class="main-navigation__toggle" type="button">
-                    <span class="visually-hidden">Открыть меню</span>
-                </button>
-            </nav>
-            <a href="tel:88007253232" class="header__phone">8 800 725 32 32</a>
-          </div>
-          <div class="header__description">
-            <p class="header__title">Походы в горы России</p>
-            <p class="header__subtitle">trekking</p>
-            <p class="header__text">Профессионально организовываем экскурсии на самые красивые вершины страны </p>
-            <a class="header__button" href="#">Выбрать экскурсию</a>
-          </div>
-          <ul class="header__social social">
-              <li class="social__item social__item--margin-medium">
-                  <a href="#" class="social__link social__link--background">
-                      <svg aria-hidden="true" class="social__icon social__icon--white" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0)">
-                          <path d="M11.8931 8.68356C11.8608 8.62955 11.6613 8.19602 10.7012 7.30495C9.69614 6.37188 9.83115 6.5234 11.0417 4.91003C11.779 3.92745 12.0738 3.32741 11.9816 3.07089C11.8938 2.82637 11.3515 2.89088 11.3515 2.89088L9.54838 2.90138C9.54838 2.90138 9.41487 2.88337 9.31511 2.94263C9.21835 3.00113 9.1561 3.13614 9.1561 3.13614C9.1561 3.13614 8.87033 3.8967 8.4893 4.54325C7.68599 5.9076 7.36421 5.9796 7.23295 5.89485C6.92768 5.69758 7.00419 5.10129 7.00419 4.67826C7.00419 3.35591 7.20445 2.80462 6.61341 2.66211C6.41689 2.61485 6.27288 2.58335 5.7711 2.5781C5.12755 2.57135 4.58226 2.58035 4.27398 2.73111C4.06847 2.83162 3.91021 3.05589 4.00696 3.06864C4.12622 3.08439 4.39624 3.14139 4.5395 3.33641C4.72477 3.58768 4.71802 4.15322 4.71802 4.15322C4.71802 4.15322 4.82453 5.70958 4.46975 5.9031C4.22598 6.03586 3.89221 5.76509 3.1759 4.52675C2.80913 3.89295 2.53161 3.19165 2.53161 3.19165C2.53161 3.19165 2.47835 3.06114 2.38309 2.99138C2.26759 2.90663 2.10557 2.87962 2.10557 2.87962L0.390947 2.89013C0.390947 2.89013 0.133677 2.89763 0.0391703 3.00938C-0.0448359 3.10914 0.0324198 3.31466 0.0324198 3.31466C0.0324198 3.31466 1.37502 6.45514 2.89463 8.03851C4.28899 9.48986 5.8716 9.39461 5.8716 9.39461H6.58866C6.58866 9.39461 6.80542 9.37061 6.91568 9.25135C7.01769 9.14184 7.01394 8.93632 7.01394 8.93632C7.01394 8.93632 6.99969 7.974 7.44672 7.83224C7.887 7.69273 8.45255 8.76231 9.05184 9.17409C9.50487 9.48536 9.84915 9.41711 9.84915 9.41711L11.452 9.39461C11.452 9.39461 12.2906 9.34285 11.8931 8.68356Z" />
-                          </g>
-                          <defs>
-                          <clipPath id="clip0">
-                          <rect width="12" height="12" />
-                          </clipPath>
-                          </defs>
-                      </svg>
-                  </a>
+    <h1 class="visually-hidden">Туры в горы России</h1>
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__wrapper">
+          <a class="header__logo logo" tabindex="0">
+            <svg class="logo__icon logo__icon--header logo__icon--white" width="31" height="31" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/icons/sprites.svg#logo"></use>
+            </svg>
+            <div class="logo__description">
+              <p class="logo__title logo__title--header">LIFETOUR</p>
+              <p class="logo__subtitle logo__subtitle--header">Организация походов в горы</p>
+            </div>
+          </a>
+          <nav class="header__navigation main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a href="#tours" class="main-navigation__link">Туры</a>
               </li>
-              <li class="social__item social__item--margin-medium">
-                  <a href="#" class="social__link social__link--background">
-                      <svg class="social__icon social__icon--white" width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0)">
-                          <path d="M6.66572 3.98786V2.65633C6.66572 2.28883 6.96398 1.99057 7.33148 1.99057H7.99724V0.326172H6.66572C5.56255 0.326172 4.66844 1.22029 4.66844 2.32345V3.98786H3.33691V5.65226H4.66844V10.9783H6.66572V5.65226H7.99724L8.663 3.98786H6.66572Z" />
-                          </g>
-                          <defs>
-                          <clipPath id="clip0">
-                          <rect width="10.6522" height="10.6522" transform="translate(0.673828 0.326172)"/>
-                          </clipPath>
-                          </defs>
-                      </svg>
-                  </a>
+              <li class="main-navigation__item">
+                <a href="#training" class="main-navigation__link">Обучение</a>
               </li>
-              <li class="social__item social__item--margin-medium">
-                  <a href="#" class="social__link social__link--background">
-                      <svg class="social__icon social__icon--white" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.41239 0H3.58745C1.60933 0 0 1.60941 0 3.58753V9.41247C0 11.3907 1.60933 13 3.58745 13H9.41239C11.3907 13 13 11.3906 13 9.41247V3.58753C13.0001 1.60941 11.3907 0 9.41239 0ZM11.8467 9.41247C11.8467 10.7547 10.7547 11.8466 9.41247 11.8466H3.58745C2.24533 11.8467 1.15342 10.7547 1.15342 9.41247V3.58753C1.15342 2.24541 2.24533 1.15342 3.58745 1.15342H9.41239C10.7546 1.15342 11.8466 2.24541 11.8466 3.58753L11.8467 9.41247Z" />
-                          <path d="M6.50006 3.15033C4.65297 3.15033 3.1503 4.65301 3.1503 6.50011C3.1503 8.34713 4.65297 9.84973 6.50006 9.84973C8.34715 9.84973 9.84982 8.34713 9.84982 6.50011C9.84982 4.65301 8.34715 3.15033 6.50006 3.15033ZM6.50006 8.69623C5.28905 8.69623 4.30372 7.71105 4.30372 6.50003C4.30372 5.28893 5.28897 4.30368 6.50006 4.30368C7.71115 4.30368 8.69641 5.28893 8.69641 6.50003C8.69641 7.71105 7.71108 8.69623 6.50006 8.69623Z" />
-                          <path d="M9.99027 2.1724C9.76803 2.1724 9.54971 2.26236 9.39276 2.41999C9.23504 2.57686 9.14437 2.79524 9.14437 3.01823C9.14437 3.24053 9.23512 3.45883 9.39276 3.61646C9.54963 3.77333 9.76803 3.86406 9.99027 3.86406C10.2133 3.86406 10.4309 3.77333 10.5885 3.61646C10.7462 3.45883 10.8362 3.24045 10.8362 3.01823C10.8362 2.79524 10.7462 2.57686 10.5885 2.41999C10.4317 2.26236 10.2133 2.1724 9.99027 2.1724Z" />
-                      </svg>
-                  </a>
+              <li class="main-navigation__item">
+                <a href="#about-us" class="main-navigation__link">О&nbsp;нас</a>
               </li>
-          </ul>
+              <li class="main-navigation__item">
+                <a href="#reviews" class="main-navigation__link">Отзывы</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#gallery" class="main-navigation__link">Фотографии</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#feedback" class="main-navigation__link">Контакты</a>
+              </li>
+            </ul>
+            <label class="main-navigation__label">
+              <input class="main-navigation__input visually-hidden" type="checkbox">
+              <span class="main-navigation__span"></span>
+            </label>
+          </nav>
+          <a href="tel:88007253232" class="header__phone">8 800 725 32 32</a>
         </div>
-      </header>
-      <main class="main">
-        <section class="">
-        </section>
-      </main>
-      <footer></footer>
+        <div class="header__description">
+          <h2 class="header__title">Походы в горы России</h2>
+          <p class="header__text">Профессионально организовываем экскурсии на самые красивые вершины страны </p>
+          <a class="header__button" href="#">Выбрать экскурсию</a>
+        </div>
+        <ul class="header__social social">
+          <li class="social__item social__item--margin-medium">
+            <a href="#" class="social__link social__link--background">
+              <svg aria-hidden="true" class="social__icon social__icon--white" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+              </svg>
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item social__item--margin-medium">
+            <a href="#" class="social__link social__link--background">
+              <svg class="social__icon social__icon--white" width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/sprites.svg#facebook"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item social__item--margin-medium">
+            <a href="#" class="social__link social__link--background">
+              <svg class="social__icon social__icon--white" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/sprites.svg#instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section id="tours" class="tours">
+        <div class="tours__inner container">
+          <div class="tours__header">
+            <h2 class="tours__title">Близжайшие туры</h2>
+            <div class="pagination">
+                <button class="pagination__button pagination__button--prev">
+                    <span class="visually-hidden">prev slide</span>
+                </button>
+                <button class="pagination__button pagination__button--next">
+                    <span class="visually-hidden">next slide</span>
+                </button>
+            </div>
+          </div>
+          <ul class="tours__list offers">
+            <li class="offers__item offers__item--kavkaz">
+              <a class="offers__link" href="#" aria-label="Кавказ - Путешествие вокруг Эльбруса">
+                <div class="offers__wrapper">
+                  <p class="offers__time">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#sun"></use>
+                    </svg>
+                    <span class="offers__time-span">4 дня</span>
+                  </p>
+                  <p class="offers__time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#halfmoon"></use>
+                    </svg>
+                    <span class="offers__time-span">3 ночей</span>
+                  </p>
+                  <div class="offers__location">
+                    <svg class="offers__location-icon" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#marker"></use>
+                    </svg>
+                    <span class="offers__country">Кавказ</span>
+                  </div>
+                </div>
+                <span class="offers__text">Путешествие<br> вокруг Эльбруса</span>
+                <dl class="offers__details">
+                  <div>
+                    <dt class="offers__details-term">Сложность:</dt>
+                    <dd class="offers__details-definition">
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="offers__details-term">Даты набора:</dt>
+                    <dd class="offers__details-definition">12.06-19.06</dd>
+                  </div>
+                  <div>
+                    <dt class="offers__details-term">Группа:</dt>
+                    <dd class="offers__details-definition">до 15 чел.</dd>
+                  </div>
+                </dl>
+              </a>
+            </li>
+            <li class="offers__item offers__item--altay">
+              <a class="offers__link" href="#" aria-label="Алтай - Путь к подножию Белухи">
+                <div class="offers__wrapper">
+                  <p class="offers__time">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#sun"></use>
+                    </svg>
+                    <span class="offers__time-span">14 дней</span>
+                  </p>
+                  <p class="offers__time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#halfmoon"></use>
+                    </svg>
+                    <span class="offers__time-span">13 ночей</span>
+                  </p>
+                  <div class="offers__location">
+                    <svg class="offers__location-icon" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#marker"></use>
+                    </svg>
+                    <span class="offers__country">Алтай</span>
+                  </div>
+                </div>
+                <span class="offers__text">Путь к подножию<br> Белухи</span>
+                <dl class="offers__details">
+                  <div>
+                    <dt class="offers__details-term">Сложность:</dt>
+                    <dd class="offers__details-definition">
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="offers__details-term">Даты набора:</dt>
+                    <dd class="offers__details-definition">14.06-23.06</dd>
+                  </div>
+                  <div>
+                    <dt class="offers__details-term">Группа:</dt>
+                    <dd class="offers__details-definition">до 25 чел.</dd>
+                  </div>
+                </dl>
+              </a>
+            </li>
+            <li class="offers__item offers__item--adygea">
+              <a class="offers__link" href="#" aria-label="Адыгея - Через Фишт к черному морю">
+                <div class="offers__wrapper">
+                  <p class="offers__time">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#sun"></use>
+                    </svg>
+                    <span class="offers__time-span">7 дней</span>
+                  </p>
+                  <p class="offers__time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#halfmoon"></use>
+                    </svg>
+                    <span class="offers__time-span">7 ночей</span>
+                  </p>
+                  <div class="offers__location">
+                    <svg class="offers__location-icon" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#marker"></use>
+                    </svg>
+                    <span class="offers__country">Адыгея</span>
+                  </div>
+                </div>
+                <span class="offers__text">Через Фишт<br> к Черному морю</span>
+                <dl class="offers__details">
+                  <div>
+                    <dt class="offers__details-term">Сложность:</dt>
+                    <dd class="offers__details-definition">
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" fill="white" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                      <svg stroke="#F3F3F3" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/icons/sprites.svg#start"></use>
+                      </svg>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="offers__details-term">Даты набора:</dt>
+                    <dd class="offers__details-definition">15.07-19.07</dd>
+                  </div>
+                  <div>
+                    <dt class="offers__details-term">Группа:</dt>
+                    <dd class="offers__details-definition">до 22 чел.</dd>
+                  </div>
+                </dl>
+              </a>
+            </li>
+          </ul>
+          <div class="tours__footer">
+            <a href="#" class="tours__link">Показать все туры</a>
+          </div>
+        </div>
+      </section>
+      <section id="training" class="training">
+        <div class="container">
+          <h2 class="training__title">Обучение</h2>
+          <strong class="training__text">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</strong>
+          <div class="training__pagination">
+            <h3 class="training__pagination-title">Наши инструкторы</h3>
+            <div class="pagination">
+              <button class="pagination__button pagination__button--prev">
+                <span class="visually-hidden">prev slide</span>
+              </button>
+              <button class="pagination__button pagination__button--next">
+                <span class="visually-hidden">next slide</span>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-container training__container">
+            <ul class="training__list instructors">
+              <li class="instructors__item">
+                <div class="instructors__image-wrapper">
+                  <img src="img/instructors/aleksandr-prokofiev@1x.jpg" srcset="img/instructors/aleksandr-prokofiev@2x.jpg 2x" alt="Александр Прокофьев">
+                </div>
+                <div class="instructors__card">
+                  <span class="instructors__name">Александр<br> Прокофьев</span>
+                  <a class="instructors__link" href="https://vk.com">
+                    <span class="visually-hidden">Профиль в вконтакте</span>
+                    <svg class="instructors__social-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p class="instructors__text">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и общительный человек.</p>
+              </li>
+              <li class="instructors__item">
+                <div class="instructors__image-wrapper">
+                  <img src="img/instructors/svetlana-avinogenova@1x.jpg" srcset="img/instructors/svetlana-avinogenova@2x.jpg" alt="Светлана Афиногенова">
+                </div>
+                <div class="instructors__card">
+                  <span class="instructors__name">Светлана<br> Афиногенова</span>
+                  <a class="instructors__link" href="https://vk.com">
+                    <span class="visually-hidden">Профиль в вконтакте</span>
+                    <svg class="instructors__social-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p class="instructors__text">Видеть мир вокруг, познавать его опасности, смотреть сквозь стены, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+              </li>
+              <li class="instructors__item">
+                <div class="instructors__image-wrapper">
+                  <img src="img/instructors/nadezda-kolisnechenko@1x.jpg" srcset="img/instructors/nadezda-kolisnechenko2@x.jpg" alt="Надежда Колесниченко">
+                </div>
+                <div class="instructors__card">
+                  <span class="instructors__name">Надежда<br> Колесниченко</span>
+                  <a class="instructors__link" href="https://vk.com">
+                    <span class="visually-hidden">Профиль в вконтакте</span>
+                    <svg class="instructors__social-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p class="instructors__text">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+              </li>
+              <li class="instructors__item">
+                <div class="instructors__image-wrapper">
+                  <img src="img/instructors/fedor-kaigorodov@1x.jpg" srcset="img/instructors/fedor-kaigorodov@2x.jpg" alt="Федор Кайгородов">
+                </div>
+                <div class="instructors__card">
+                  <span class="instructors__name">Федор<br> Кайгородов</span>
+                  <a class="instructors__link" href="https://vk.com">
+                    <span class="visually-hidden">Профиль в вконтакте</span>
+                    <svg class="instructors__social-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p class="instructors__text">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, приэльбрусье, Архыз, много путешествует по Европе.</p>
+              </li>
+              <li class="instructors__item ">
+                <div class="instructors__image-wrapper">
+                  <img src="img/instructors/sergei-denisov@1x.jpg" srcset="img/instructors/sergei-denisov@2x.jpg" alt="Сергей Денисов">
+                </div>
+                <div class="instructors__card">
+                  <span class="instructors__name">Сергей<br> Денисов</span>
+                  <a class="instructors__link" href="https://vk.com">
+                    <span class="visually-hidden">Профиль в вконтакте</span>
+                    <svg class="instructors__social-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+                    </svg>
+                    </a>
+                </div>
+                  <p class="instructors__text">Профессиональный гид, путешественник, спортсмен, альпинист. Блестящий рассказчик, собеседник; с ним не скучно.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="training__progress progress">
+            <h3 class="progress__title">Процесс обучения</h3>
+            <ul class="progress__list">
+              <li class="progress__item progress__item--map">
+                <p class="progress__text">Изучение спортивного туристского движения</p>
+              </li>
+              <li class="progress__item progress__item--boots">
+                <p class="progress__text">Подготовка и техническое снаряжение в походах</p>
+              </li>
+              <li class="progress__item progress__item--mountain">
+                <p class="progress__text">Разъяснение характера горных препядствий и их сложности</p>
+              </li>
+              <li class="progress__item progress__item--pine-tree">
+                <p class="progress__text">Лекции по экологии, окружающей среде и гигиене</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="about-us" class="about-us">
+        <div class="about-us__wrapper container">
+          <h2 class="about-us__title">О нас</h2>
+          <div class="about-us__history">
+            <h3 class="about-us__subtitle">История компании</h3>
+            <p class="about-us__text">В далеком 2000 году мы начали заниматься туризмом - походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+          </div>
+          <div class="about-us__target">
+            <h3 class="about-us__subtitle">Наша цель</h3>
+            <p class="about-us__text">Подарить вам незабываемые впечатления от похода в горы. Мы берем на себя все организационные вопросы. При организации мы обязательно учтем все ваши пожелания. Вам остенется только наслаждаться незабываемым приключеним.</p>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <div class="reviews__header">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="pagination">
+              <button class="pagination__button pagination__button--prev">
+                <span class="visually-hidden">prev slide</span>
+              </button>
+              <button class="pagination__button pagination__button--next">
+                <span class="visually-hidden">next slide</span>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-container reviews__swiper-container">
+            <ul class="swiper-wprapper reviews__list">
+              <li class="reviews__item">
+                <blockquote class="reviews__blockquote">
+                  <div class="reviews__author">
+                    <div class="rewiews__image">
+                      <img src="img/reviews/frolov-aleksandr@1x.jpg" srcset="img/reviews/frolov-aleksandr@2x.jpg 2x" height="100" width="96" alt="Фролов Александр">
+                    </div>
+                    <div class="reviews__about-author">
+                      <cite class="reviews__name">Фролов Александр</cite>
+                      <p class="reviews__details">28 лет, Москва</p>
+                    </div>
+                  </div>
+                  <p class="reviews__text reviews__text--margin-top reviews__text--margin-bottom">Осенью ходили в поход с друзьями. Впечатления исключительно положительные! Инструкторы - настоящие эксперты - всему научили, все показали. Рассказали истории о всех местах, которые мы так или иначе посещали.</p>
+                  <p class="reviews__text">С уверенностью могу разделить жизнь на до этого похода и после. Настолько сильно не отдыхал душой и телом никогда. Всем рекомендую!</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <blockquote class="reviews__blockquote">
+                  <div class="reviews__author">
+                    <div class="rewiews__image">
+                      <img src="img/reviews/svetlana-oleinik@1x.jpg" srcset="img/reviews/svetlana-oleinik@2x.jpg 2x" height="100" width="96" alt="Светлана Олейник">
+                    </div>
+                    <div class="reviews__about-author">
+                      <cite class="reviews__name">Светлана Олейник</cite>
+                      <p class="reviews__details">25 лет, Владивосток</p>
+                    </div>
+                  </div>
+                  <p class="reviews__text reviews__text--margin-top reviews__text--margin-bottom">Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века.<br> Инструктор Федор Кайгородов добросовестный и внимательный к технике безопасности и своим туристам.</p>
+                  <p class="reviews__text">Совет для будущих походников: важно соблюсти рекомендации в памятке.</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <blockquote class="reviews__blockquote">
+                  <div class="reviews__author">
+                    <div class="rewiews__image">
+                      <img src="img/reviews/evgenia-bazenova@1x.jpg" srcset="img/reviews/evgenia-bazenova@2x.jpg 2x" height="100" width="96" alt="Евгения Баженова">
+                    </div>
+                    <div class="reviews__about-author">
+                      <cite class="reviews__name">Евгения Баженова</cite>
+                      <p class="reviews__details">23 года, Кастрома</p>
+                    </div>
+                  </div>
+                  <p class="reviews__text reviews__text--margin-top reviews__text--margin-bottom">Поход понравился!!<br> Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18м, поэтому не была уверена, пройду ли до конца. Но шла и шла впереди, не плелась в конце группы. К моему удивлению второй день прошел для меня легче, чем ожидала, видимо дело привычки.</p>
+                  <p class="reviews__text">Спасибо ребятам и инструкторам за помощь и поддержку!</p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">Фотогалерея</h2>
+          <div class="gallery__description">
+            <strong class="gallery__text">Добавляйте фото в Instagram с хэштегом <b class="gallery__text-bold">#лайфтур</b>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</strong>
+            <div class="gallery__pagination pagination">
+              <button class="pagination__button pagination__button--prev">
+                <span class="visually-hidden">prev slide</span>
+              </button>
+              <button class="pagination__button pagination__button--next">
+                <span class="visually-hidden">next slide</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/gallery/man@1x.jpg" srcset="img/gallery/man@2x.jpg 2x" height="449" width="275" alt="Человек в горах">
+          </li>
+          <li class="gallery__item">
+            <img src="img/gallery/camping@1x.jpg" srcset="img/gallery/camping@2x.jpg 2x" height="179" width="298" alt="Кемпинг у костра">
+          </li>
+          <li class="gallery__item">
+            <img src="img/gallery/compass@1x.jpg" srcset="img/gallery/compass@2x.jpg 2x" height="265" width="298" alt="Компас в руке">
+          </li>
+          <li class="gallery__item">
+            <img src="img/gallery/mountain-trail@1x.jpg" srcset="img/gallery/mountain-trail@2x.jpg 2x" height="449" width="275" alt="Спуск с гор">
+          </li>
+          <li class="gallery__item">
+            <img src="img/gallery/glacier@1x.jpg" srcset="img/gallery/glacier@2x.jpg 2x" height="179" width="298" alt="Ледник">
+          </li>
+          <li class="gallery__item">
+            <img src="img/gallery/tent@1x.jpg" srcset="img/gallery/tent@2x.jpg 2x" height="265" width="298" alt="Кемпинг ночью">
+          </li>
+          <li class="gallery__item">
+            <img src="img/gallery/forest@1x.jpg" srcset="img/gallery/forest@2x.jpg 2x" height="449" width="275" alt="Люди в лесу">
+          </li>
+        </ul>
+    </section>
+      <section id="feedback" class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="feedback__description">
+          <p class="feedback__title">Остались вопросы?</p>
+          <p class="feedback__text">Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        </div>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="POST">
+          <fieldset class="feedback__fieldset">
+            <div class="feedback__wrapper">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="feedback__input-name" type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
+            </div>
+            <div class="feedback__wrapper feedback__wrapper--phone">
+              <label class="visually-hidden" for="name">Телефон</label>
+              <input class="feedback__input-phone" type="tel" name="phone" id="phone" placeholder="Телефон" required>
+            </div>
+            <input class="feedback__button" type="submit" value="Отправить">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__wrapper">
+          <a class="logo">
+            <svg class="logo__icon logo__icon--black" width="31" height="31" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/icons/sprites.svg#logo"></use>
+            </svg>
+            <div class="logo__description">
+              <p class="logo__title">LIFETOUR</p>
+              <p class="logo__subtitle">Организация походов в горы</p>
+            </div>
+          </a>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Туры</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Обучение</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">О нас</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Фотографии</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a href="tel:88007253232" class="footer__phone">8 800 725 32 32</a>
+        </div>
+        <ul class="footer__social social">
+          <li class="social__item social__item--margin-medium">
+            <a class="social__link social__link--border" href="#">
+              <svg class="social__icon social__icon--black" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/sprites.svg#vkontakte"></use>
+              </svg>
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item social__item--margin-medium">
+            <a class="social__link social__link--border" href="#">
+              <svg class="social__icon social__icon--black" width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/sprites.svg#facebook"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item social__item--margin-medium">
+            <a class="social__link social__link--border" href="#">
+              <svg class="social__icon social__icon--black" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/sprites.svg#instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+    </footer>
+    <script src="js/imask.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

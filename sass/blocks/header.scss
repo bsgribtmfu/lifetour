@@ -1,37 +1,82 @@
 .header {
-  height: 774px;
+  min-height: 774px;
   position: relative;
-  background-color: #787d8f;
-  background-image: url('../../img/header/mountains-clouds/mountains-desktop@1x.jpg');
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
-  background-size: cover;
-  color: #FFFFFF;
+  background-color: $dark-blue;
+  color: $white;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    background-image: url('../../img/header/mountains-clouds/mountains-desktop@2x.jpg');
+  &::before {
+    content: '';
+    width: 100%;
+    height: 774px;
+    position: absolute;
+    background-image: url('../../img/header/mountains-desktop@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: url('../../img/header/mountains-desktop@2x.jpg');
+    }
   }
 
   @include toTablet {
-    height: 628px;
-    background-image: url('../../img/header/mountains-clouds/mountains-tablet@1x.jpg');
+    min-height: 628px;
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-      background-image: url('../../img/header/mountains-clouds/mountains-tablet@2x.jpg');
+    &::before {
+      background-image: url('../../img/header/mountains-tablet@1x.jpg');
+      height: 628px;
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+        background-image: url('../../img/header/mountains-tablet@2x.jpg');
+      }
     }
   }
 
   @include toMobile {
-    height: 470px;
-    background-position: 70% 0%;
+    min-height: 470px;
+    max-width: 100%;
+    margin-top: initial;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 470px;
+      bottom: 0;
+      background-image: url(../../img/header/mountains-tablet@2x.jpg);
+      background-position: 70% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
+
+
 }
 
-.header__inner {
+.header__content {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-height: 100%;
+  //height: 100%;
+  position: relative;
+
+  // погляди как эти полосы реализованы в макете
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%; // 100% это вместе с рамкой, тоесть с padding, который формирует контейнер, как бы мне этот padding вычесть, могу конечно использовать функцию calc(100%-padding).
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0.23;
+    background-image: repeating-linear-gradient(to right, $white 0px, $white 1px, transparent 2px, transparent 239px);
+  }
+
+  @include toTablet {
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .header__wrapper {
@@ -39,16 +84,16 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-top: 43px;
+  margin-top: 43px;
 
   @include toTablet {
-    padding-top: 36px;
+    margin-top: 36px;
   }
 
   @include toMobile {
+    margin-top: 13px;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 13px;
   }
 }
 
@@ -59,6 +104,7 @@
 }
 
 .header__logo {
+
   @include toTablet {
     position: absolute;
     left: 50%;
@@ -78,6 +124,14 @@
   font-size: 19px;
   line-height: 30px;
   color: inherit;
+
+  &:hover {
+    color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 
   @include toTablet {
     font-size: 16px;
@@ -105,42 +159,46 @@
 }
 
 .header__title {
+  position: relative;
   margin: 0;
   font-weight: 800;
   font-size: 45px;
   line-height: 55px;
 
+  &::before {
+    content: 'trekking';
+    position: absolute;
+    margin: 0;
+    font-weight: 900;
+    font-size: 93px;
+    line-height: 113px;
+    letter-spacing: 0.07em;
+    color: $white;
+    text-transform: uppercase;
+    opacity: 0.2;
+    top: -46px;
+  }
+
   @include toTablet {
     font-size: 35px;
     line-height: 43px;
+
+    &::before {
+      font-size: 69px;
+      line-height: 84px;
+      top: -33px;
+    }
   }
 
   @include toMobile {
     font-size: 27px;
     line-height: 33px;
-  }
-}
 
-.header__subtitle {
-  position: absolute;
-  margin: 0;
-  font-weight: 900;
-  font-size: 93px;
-  line-height: 113px;
-  letter-spacing: 0.07em;
-  color: #F5F9FC;
-  text-transform: uppercase;
-  opacity: 0.2;
-  top: -46px;
-
-  @include toTablet {
-    font-size: 69px;
-    line-height: 84px;
-  }
-
-  @include toMobile {
-    font-size: 41px;
-    line-height: 50px;
+    &::before {
+      font-size: 41px;
+      line-height: 50px;
+      top: -14px;
+    }
   }
 }
 
@@ -170,11 +228,19 @@
   line-height: 25px;
   color: inherit;
   text-decoration: none;
-  background-color: #0266C1;
+  background-color: $blue;
   padding: 20px;
   margin-top: 40px;
   max-width: 246px;
   text-align: center;
+
+  &:hover {
+    background-color: $half-blue;
+  }
+
+  &:active {
+    background-color: $sky-blue;
+  }
 
   @include toTablet {
     font-size: 14px;
